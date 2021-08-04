@@ -1,0 +1,116 @@
+.signup__content {
+    width: 100%;
+    height: 100vh;
+}
+
+.signup__content__form {
+    grid-column: span 4;
+    padding: var(--section-padding);
+}
+
+.signup__title {
+    margin: var(--para-margin);
+}
+
+label {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    margin: 1rem 0 3rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--testimonial-border-cl);
+    border-radius: .5rem;
+    font-size: 1.4rem;
+}
+
+input[type="password"] {
+    background-image: url("/Assets/hide\ password.svg");
+    background-repeat: no-repeat;
+    background-position: 330px 10px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.input__checkbox {
+    margin: .4rem 2rem 0 0;
+}
+
+.terms {
+    color: var(--dark);
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.terms__link {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.signup__content__btn {
+    text-align: center;
+}
+
+.signup__para {
+    color: var(--dark);
+    text-align: center;
+}
+
+.sign__content__image {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .signup__content__form {
+        grid-column: span 8;
+    }
+    input[type="password"] {
+        background-position: 680px 10px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .signup__content__form,
+    .sign__content__image {
+        grid-column: span 6;
+    }
+    .sign__content__image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--blue);
+        padding: 10rem 0;
+    }
+    .sign__content__image img {
+        max-width: 80%;
+    }
+    .sign__content__image__text {
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .sign__content__image__text h2,
+    .sign__content__image__text p {
+        color: var(--white);
+    }
+    .sign__content__image__text p {
+        width: 400px;
+        margin-top: 2rem;
+    }
+    .dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+    .dots__item {
+        background-color: #fff;
+        width: 1rem;
+        height: 1rem;
+        border-radius: .5rem;
+        margin-right: 1rem;
+    }
+}
